@@ -1,0 +1,15 @@
+<div>
+  <h3>Post Activity</h3>
+  <div>
+    <label>Distance (in km):
+      <input [(ngModel)]="exercise.distance"/>
+    </label>
+  </div>
+  <div>
+    <label>Time (in min):
+      <input [(ngModel)]="exercise.time"/>
+    </label>
+  </div>
+  <button (click)="goBack()">Cancel</button>
+  <button (click)="save()">Post</button>
+</div>

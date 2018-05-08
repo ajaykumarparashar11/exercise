@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<nav *ngIf="user">
+  <a routerLink="/dashboard">Dashboard</a>
+  <a (click)="signOut()">Logout</a>
+</nav>
+<nav *ngIf="!user">
+  <a (click)="signInWithGoogle()">Google Sign In</a>
+  <a (click)="signInWithFB()">Facebook Sign In</a>
+</nav>
+<router-outlet></router-outlet>
+<!--<app-messages></app-messages>-->
